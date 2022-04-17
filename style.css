@@ -1,9 +1,12 @@
-.body {
+body {
     display: flex;
+    flex-direction: column;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
-    color: #1f2937;
+    background-color: #1f2937;
+    color: aliceblue;
+    width: auto;
 }
