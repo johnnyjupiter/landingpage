@@ -2,17 +2,34 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
+    min-height: 100vh;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
-    background-color: #3c5841;
+    background-image: linear-gradient(to right, rgb(212, 189, 134), rgb(49, 88, 49));
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .header-left {
-    color: #F9FAF8;
-    font-size: 24px;
+    display: flex;
+    width: 5px;
+}
+
+.header-left-image {
+    width: 60px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    justify-content: space-between;
+    font-weight: bold;
 }
 
 a {
@@ -36,6 +53,19 @@ button {
     align-items: center;
     background-color: #3c5841;
     height: 350px;
+    background-image: url(images/plantbackground.jpg);
+    background-size: cover;
+}
+
+.hero-trans {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0000009e;
+    height: 250px;
+    width: 800px;
+    padding-left: 10px;
+    border: 2px solid #e2b959;
 }
 
 .hero-left {
@@ -61,7 +91,7 @@ button {
 }
 
 .hero-right-img {
-    width: 300px;
+    width: 400px;
 }
 
 .info {
@@ -69,6 +99,7 @@ button {
     flex-direction: column;
     background-image: linear-gradient(to right, rgb(212, 189, 134), rgb(49, 88, 49));
     height: 330px;
+    padding: 10px;
 }
 
 .info-header {
@@ -107,13 +138,15 @@ button {
     display: flex;
     align-items: center;
     height: 50px;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .item-image:hover {
     transform: scale(1.05)
 }
 
-.quote-container {
+.quote-layer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -122,17 +155,24 @@ button {
     background-image: linear-gradient(to right, rgb(212, 189, 134), rgb(49, 88, 49));
 }
 
+.quote-container {
+    width: auto;
+}
+
 .quote {
     color: #ffffff;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
+    width: 650px;
+    flex-wrap: wrap;
 }
 
 .author {
-    text-align: end;
+    text-align: right;
     color: #ffffff;
     font-size: 20px;
     font-weight: bold;
+    padding-right: 30px;
 }
 
 .cta {
@@ -146,11 +186,18 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 600px;
-    height: 60px;
+    width: 620px;
+    height: 70px;
     font-size: 30px;
     font-weight: bold;
     background-color: antiquewhite;
     color: #3c5841;
     border-radius: 5px;
+    padding: 3px;
+}
+
+.footer {
+    background-color: #d6c6a1;
+    text-align: center;
+    font-weight: bold;
 }
